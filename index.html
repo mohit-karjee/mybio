@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mohit Karjee</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#plays">Plays</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mohit Karjee</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#plays" onclick="toggleMenu()">Plays</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.jpg "
+          alt="Mohit Karjee profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mohit Karjee 👋</h1>
+        <h2>
+          <span class="section__text__h2" id="dynamic-text">I can act</span
+          ><span id="cursor">|</span>
+        </h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="social-container">
+          <img
+            src="./assets/instagram.png"
+            alt="My instagram profile"
+            class="icon"
+            onclick="location.href='https:www.instagram.com/mohitkarjee'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Drive profile"
+            class="icon"
+            onclick="location.href='https:drive.google.com/drive/folders/1I9p_mk0D_FxWrBRQOEOpQXhf53YKwsQp'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4+ years <br />Theatre</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech <br />National Institute Of Technology, Jamshedpur</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              A theatre guy with over four years of professional experience,
+              especially focused on Hindi proscenium theatre. His repertoire
+              includes acclaimed plays like Kanyadaan and Khamosh Adaalat Jaari
+              Hai by Vijay Tendulkar, Bali Aur Shambhu and Aisa Kehte Hain by
+              Manav Kaul, and many more. He has also worked with the renowned
+              artist Piyush Mishra and acted in his play Gagan Damama Bajyo in
+              Bangalore. He is recognized for his work in street theatre, as
+              well as conducting theatre workshops at
+              <a href="https://www.theatrenama.com" target="_blank">
+                <span style="color: black">
+                  <ins>Theatrenama.</ins>
+                </span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#plays'"
+      />
+    </section>
+    <section id="plays">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Works</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpg"
+                alt="Plays 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Gagan Damama Bajyo
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:www.youtube.com/watch?v=ucjhviwP1bU'"
+              >
+                Explore
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:drive.google.com/drive/folders/10ux2y6mTIbWRjaCUXjpxhF-zJenYvn2e'"
+              >
+                Images
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.jpg"
+                alt="Plays 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Aisa Kehte Hain</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:www.mumbaitheatreguide.com/dramas/hindi/24_preview_aisa_kehte_he.asp#'"
+              >
+                Explore
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:drive.google.com/drive/folders/1MCv64Ac4tBziT0DUWYf51kPaqXmE3P7j'"
+              >
+                Images
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.webp"
+                alt="Plays 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Panchhi</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:bangaloremirror.indiatimes.com/opinion/others/money-matters-in-love-panchhi-an-award-winning-play-will-show-you-the-angst-of-a-lower-middle-class-couple/articleshow/65662051.cms'"
+              >
+                Explore
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:drive.google.com/drive/folders/1BuMJGxA40oQAJfcSbBW4ZAIbmZjxv2jM'"
+              >
+                Images
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpeg"
+                alt="Plays 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Chhapra Ke Deewaney
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:www.mumbaitheatreguide.com/dramas/hindi/chhapra-ke-deewane-hindi-play-preview.asp'"
+              >
+                Explore
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:drive.google.com/drive/folders/1FV9hAJFwBzqfNPXw3hi6D8h0DFkqLytT'"
+              >
+                Images
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.jpg"
+                alt="Plays 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Bali Aur Shambhu</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:www.youtube.com/watch?v=MkA_Pa-Ts_E&list=PL2Ho_1utqsZgeap_0q_02gqAsU9Q5pjl1&index=1'"
+              >
+                Explore
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:drive.google.com/drive/folders/1TXWwrwJEP3cPcypPqru8LEaOi7fzpySh'"
+              >
+                Images
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-6.webp"
+                alt="Plays 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Aala Afsar</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:timesofindia.indiatimes.com/city/pune/aala-afsar-comes-visiting-to-clean-up-corruption-with-a-dash-of-humour/articleshow/107196837.cms'"
+              >
+                Explore
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:drive.google.com/drive/folders/1zSIOpoV_JAqvO10EzMYRnu5k9bXTctA3'"
+              >
+                Images
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-5.jpg"
+                alt="Plays 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Pran Jaye Par Rajneeti Na Jaye
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:www.delhievents.com/2009/02/theatre-tanzil-theatre-group-presents.html'"
+              >
+                Explore
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:drive.google.com/drive/folders/1Gya1_T885XJiMmDB4NONUr1XEJt1IoWJ'"
+              >
+                Images
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-7.jpg"
+                alt="Plays 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Pocketmar Rangmandal
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:www.indulgexpress.com/culture/theatre/2025/Jan/10/vatsal-barans-adaptation-of-pocketmaar-rangamandal-returns-to-the-stage'"
+              >
+                Explore
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:drive.google.com/drive/folders/1JYWlDwy1t6I-PzzZQnCTqiQuK8GIMRKV'"
+              >
+                Images
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="mailto:mohit.karjee@gmail.com">mohit.karjee@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/instagram.png"
+            alt="Instagram icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.instagram.com/mohitkarjee/">Instagram</a>
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="tel:+917428069421">+91 7428069421</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#plays">Plays</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; Mohit Karjee. All Right Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
